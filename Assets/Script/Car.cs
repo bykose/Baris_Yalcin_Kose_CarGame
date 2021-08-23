@@ -3,9 +3,10 @@ using UnityEngine.SceneManagement;
 
 public class Car : MonoBehaviour
 {
-    [Header("Reference")]
+    [Header("Properties")]
     private Vector3 _initialPos;
     private Quaternion _initialRotation;
+    [Header("Reference")]
     public Material Material;
     private ReplayManager _replay;
     private Renderer _rend;
@@ -65,9 +66,7 @@ public class Car : MonoBehaviour
             if (CarController.Instance.ActiveCarGO.name == CarGameManager.Instance.CarGo[CarGameManager.Instance.CarGo.Length-1].name)
             {
                 CarGameManager.Instance.CanPlay = false;
-                if (SceneManager.GetActiveScene().name == "Level-2")
-                    return;
-                SceneChangeEditor.Instance.NextLevel("Level-2");
+                SceneChangeEditor.Instance.NextLevel();
             }
             else
             {

@@ -15,7 +15,7 @@ public class CarController : MonoSingleton<CarController>
     private void Update()
     {
         //Values are taken from the keyboard so that they can be tested in the computer environment.
-        _horizontalInput = Input.GetAxis("Horizontal");
+        //_horizontalInput = Input.GetAxis("Horizontal");
 
         if (CarGameManager.Instance.CanPlay)
         {

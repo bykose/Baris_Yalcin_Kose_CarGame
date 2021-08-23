@@ -1,5 +1,5 @@
 using UnityEngine;
-public class ButtonHandler : MonoSingleton<ButtonHandler>
+public class ButtonHandler : MonoBehaviour
 {
 
     [Header("Properties")]

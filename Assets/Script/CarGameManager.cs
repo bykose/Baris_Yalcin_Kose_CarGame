@@ -6,7 +6,7 @@ public class CarGameManager : MonoSingleton<CarGameManager>
     [Header("Properties")]
     [SerializeField] private bool _canPlay;
     private Car _activeCar;
-    [SerializeField] private int _activeCarIndex = 0;
+    [SerializeField] private int _activeCarIndex = 0; //Designer can change index on inspector for debug active car
     private int _replayIndex ;
 
 
