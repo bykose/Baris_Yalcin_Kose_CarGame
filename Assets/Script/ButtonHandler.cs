@@ -1,6 +1,5 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
-public class ButtonHandler : MonoBehaviour
+public class ButtonHandler : MonoSingleton<ButtonHandler>
 {
 
     [Header("Properties")]
@@ -23,9 +22,5 @@ public class ButtonHandler : MonoBehaviour
         CarController.Instance.SetTurnDirection(_direction);
     }
     #endregion
-    public void RestartLevel()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
 
 }

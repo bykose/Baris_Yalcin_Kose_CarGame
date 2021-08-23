@@ -5407,8 +5407,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2083534270}
-        m_TargetAssemblyTypeName: ButtonHandler, Assembly-CSharp
+      - m_Target: {fileID: 2083534271}
+        m_TargetAssemblyTypeName: SceneChangeEditor, Assembly-CSharp
         m_MethodName: RestartLevel
         m_Mode: 1
         m_Arguments:
@@ -6848,6 +6848,7 @@ GameObject:
   - component: {fileID: 2083534273}
   - component: {fileID: 2083534272}
   - component: {fileID: 2083534270}
+  - component: {fileID: 2083534271}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -6865,6 +6866,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a023b49202aabc542a38ccdbaaa39362, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2083534271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2083534269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 535ddc3a95212c24e9356ff1fe8650df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &2083534272

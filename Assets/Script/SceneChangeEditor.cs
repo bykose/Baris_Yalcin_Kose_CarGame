@@ -7,4 +7,8 @@ public class SceneChangeEditor : MonoSingleton<SceneChangeEditor>
     {
         SceneManager.LoadScene(name);
     }
+    public void RestartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
 }

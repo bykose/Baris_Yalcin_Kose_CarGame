@@ -44,6 +44,12 @@ public class Car : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
+        //If the replays collide, it restarts the Level.
+        if (other.gameObject.CompareTag("Replay") && this.gameObject.CompareTag("Replay"))
+        {
+            SceneChangeEditor.Instance.RestartLevel();
+            return;
+        }
         //If the car object hits other cars or an obstacle,
         //the car returns to the starting point and the positions saved for replay are deleted.
         if (other.gameObject.CompareTag("Replay") || other.gameObject.CompareTag("Obstacle"))
@@ -73,6 +79,7 @@ public class Car : MonoBehaviour
                 ChangeMaterial();
             }
         }
+        
     }
     //The initial position and rotation of the Car object are set.
     private void SetInitial()
